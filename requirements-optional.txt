@@ -1,0 +1,5 @@
+matplotlib
+pyface
+pyqt5
+traitsui
+mayavi @ git+https://github.com/enthought/mayavi@master
