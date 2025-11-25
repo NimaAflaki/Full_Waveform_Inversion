@@ -1,0 +1,3 @@
+2025-10-31 13:06:20,880 - INFO       MONITOR         Listening at <CommsManager object at 139972492095312, uid=monitor, address=ultrasound.uom.memphis.edu, port=3000, state=connected>
+2025-10-31 13:06:22,022 - INFO       MONITOR         Listening at <NODE:0 | WORKER:0-1>
+2025-10-31 13:51:44,330 - INFO       MONITOR         Pending barrier tasks 1

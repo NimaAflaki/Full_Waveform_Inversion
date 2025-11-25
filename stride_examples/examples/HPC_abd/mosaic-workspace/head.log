@@ -1,0 +1,149 @@
+2025-10-31 13:06:21,172 - INFO       HEAD            Listening at <CommsManager object at 139972497213520, uid=head, address=ultrasound.uom.memphis.edu, port=3003, state=connected>
+2025-10-31 13:06:36,458 - PERF       HEAD            Starting iteration 1 (out of 8), block 1 (out of 4)
+2025-10-31 13:06:36,458 - PERF       HEAD            
+
+2025-10-31 13:06:36,458 - PERF       HEAD            Giving shot 1 to worker:0:0 (0 out of 16)
+2025-10-31 13:09:31,572 - PERF       HEAD            Functional value for shot 1: loss 1.633254e+00 for shot 1
+2025-10-31 13:09:31,572 - PERF       HEAD            Retrieved gradient for shot 1 (1 out of 16)
+2025-10-31 13:09:31,572 - PERF       HEAD            
+
+2025-10-31 13:09:31,572 - PERF       HEAD            Giving shot 2 to worker:0:0 (1 out of 16)
+2025-10-31 13:12:19,150 - PERF       HEAD            Functional value for shot 2: loss 1.724718e+00 for shot 2
+2025-10-31 13:12:19,150 - PERF       HEAD            Retrieved gradient for shot 2 (2 out of 16)
+2025-10-31 13:12:19,150 - PERF       HEAD            
+
+2025-10-31 13:12:19,150 - PERF       HEAD            Giving shot 4 to worker:0:0 (2 out of 16)
+2025-10-31 13:15:11,514 - PERF       HEAD            Functional value for shot 4: loss 1.493828e+00 for shot 4
+2025-10-31 13:15:11,515 - PERF       HEAD            Retrieved gradient for shot 4 (3 out of 16)
+2025-10-31 13:15:11,515 - PERF       HEAD            
+
+2025-10-31 13:15:11,515 - PERF       HEAD            Giving shot 7 to worker:0:0 (3 out of 16)
+2025-10-31 13:18:00,250 - PERF       HEAD            Functional value for shot 7: loss 1.317203e+00 for shot 7
+2025-10-31 13:18:00,250 - PERF       HEAD            Retrieved gradient for shot 7 (4 out of 16)
+2025-10-31 13:18:00,250 - PERF       HEAD            
+
+2025-10-31 13:18:00,250 - PERF       HEAD            Giving shot 8 to worker:0:0 (4 out of 16)
+2025-10-31 13:20:48,739 - PERF       HEAD            Functional value for shot 8: loss 1.315745e+00 for shot 8
+2025-10-31 13:20:48,739 - PERF       HEAD            Retrieved gradient for shot 8 (5 out of 16)
+2025-10-31 13:20:48,739 - PERF       HEAD            
+
+2025-10-31 13:20:48,739 - PERF       HEAD            Giving shot 11 to worker:0:0 (5 out of 16)
+2025-10-31 13:23:37,752 - PERF       HEAD            Functional value for shot 11: loss 1.234560e+00 for shot 11
+2025-10-31 13:23:37,752 - PERF       HEAD            Retrieved gradient for shot 11 (6 out of 16)
+2025-10-31 13:23:37,752 - PERF       HEAD            
+
+2025-10-31 13:23:37,752 - PERF       HEAD            Giving shot 14 to worker:0:0 (6 out of 16)
+2025-10-31 13:26:26,317 - PERF       HEAD            Functional value for shot 14: loss 1.221995e+00 for shot 14
+2025-10-31 13:26:26,317 - PERF       HEAD            Retrieved gradient for shot 14 (7 out of 16)
+2025-10-31 13:26:26,317 - PERF       HEAD            
+
+2025-10-31 13:26:26,317 - PERF       HEAD            Giving shot 17 to worker:0:0 (7 out of 16)
+2025-10-31 13:29:14,971 - PERF       HEAD            Functional value for shot 17: loss 1.265987e+00 for shot 17
+2025-10-31 13:29:14,971 - PERF       HEAD            Retrieved gradient for shot 17 (8 out of 16)
+2025-10-31 13:29:14,971 - PERF       HEAD            
+
+2025-10-31 13:29:14,971 - PERF       HEAD            Giving shot 18 to worker:0:0 (8 out of 16)
+2025-10-31 13:32:03,564 - PERF       HEAD            Functional value for shot 18: loss 1.196409e+00 for shot 18
+2025-10-31 13:32:03,564 - PERF       HEAD            Retrieved gradient for shot 18 (9 out of 16)
+2025-10-31 13:32:03,565 - PERF       HEAD            
+
+2025-10-31 13:32:03,565 - PERF       HEAD            Giving shot 22 to worker:0:0 (9 out of 16)
+2025-10-31 13:34:52,268 - PERF       HEAD            Functional value for shot 22: loss 1.224139e+00 for shot 22
+2025-10-31 13:34:52,268 - PERF       HEAD            Retrieved gradient for shot 22 (10 out of 16)
+2025-10-31 13:34:52,268 - PERF       HEAD            
+
+2025-10-31 13:34:52,268 - PERF       HEAD            Giving shot 24 to worker:0:0 (10 out of 16)
+2025-10-31 13:37:40,933 - PERF       HEAD            Functional value for shot 24: loss 1.428455e+00 for shot 24
+2025-10-31 13:37:40,933 - PERF       HEAD            Retrieved gradient for shot 24 (11 out of 16)
+2025-10-31 13:37:40,933 - PERF       HEAD            
+
+2025-10-31 13:37:40,933 - PERF       HEAD            Giving shot 25 to worker:0:0 (11 out of 16)
+2025-10-31 13:40:29,485 - PERF       HEAD            Functional value for shot 25: loss 1.579546e+00 for shot 25
+2025-10-31 13:40:29,485 - PERF       HEAD            Retrieved gradient for shot 25 (12 out of 16)
+2025-10-31 13:40:29,485 - PERF       HEAD            
+
+2025-10-31 13:40:29,485 - PERF       HEAD            Giving shot 32 to worker:0:0 (12 out of 16)
+2025-10-31 13:43:18,077 - PERF       HEAD            Functional value for shot 32: loss 1.818862e+00 for shot 32
+2025-10-31 13:43:18,077 - PERF       HEAD            Retrieved gradient for shot 32 (13 out of 16)
+2025-10-31 13:43:18,077 - PERF       HEAD            
+
+2025-10-31 13:43:18,077 - PERF       HEAD            Giving shot 36 to worker:0:0 (13 out of 16)
+2025-10-31 13:46:06,609 - PERF       HEAD            Functional value for shot 36: loss 1.730104e+00 for shot 36
+2025-10-31 13:46:06,609 - PERF       HEAD            Retrieved gradient for shot 36 (14 out of 16)
+2025-10-31 13:46:06,609 - PERF       HEAD            
+
+2025-10-31 13:46:06,609 - PERF       HEAD            Giving shot 40 to worker:0:0 (14 out of 16)
+2025-10-31 13:48:55,435 - PERF       HEAD            Functional value for shot 40: loss 1.390607e+00 for shot 40
+2025-10-31 13:48:55,435 - PERF       HEAD            Retrieved gradient for shot 40 (15 out of 16)
+2025-10-31 13:48:55,435 - PERF       HEAD            
+
+2025-10-31 13:48:55,435 - PERF       HEAD            Giving shot 62 to worker:0:0 (15 out of 16)
+2025-10-31 13:51:44,328 - PERF       HEAD            Functional value for shot 62: loss 1.622064e+00 for shot 62
+2025-10-31 13:51:44,328 - PERF       HEAD            Retrieved gradient for shot 62 (16 out of 16)
+2025-10-31 13:51:44,839 - PERF       HEAD            Updating variable vp,
+2025-10-31 13:51:44,860 - PERF       HEAD            	 grad before processing in range [-2.164624e-03, 1.767906e-02]
+2025-10-31 13:51:44,876 - PERF       HEAD            	 grad after processing in range [-3.088002e-07, 2.521061e-06]
+2025-10-31 13:51:44,876 - PERF       HEAD            	 variable range before update [1.540000e+03, 2.426584e+03]
+2025-10-31 13:51:44,876 - PERF       HEAD            	 taking final update step of 1.000000e+01 [unclipped step of 1.000000e+01]
+2025-10-31 13:51:44,895 - PERF       HEAD            	 variable range after update [1.532711e+03, 2.453007e+03]
+2025-10-31 13:51:44,904 - PERF       HEAD            Done iteration 1 (out of 8), block 1 (out of 4) - Total loss 2.319747e+01
+2025-10-31 13:51:44,904 - PERF       HEAD            ====================================================================
+2025-10-31 13:51:44,928 - PERF       HEAD            Starting iteration 2 (out of 8), block 1 (out of 4)
+2025-10-31 13:51:44,929 - PERF       HEAD            
+
+2025-10-31 13:51:44,929 - PERF       HEAD            Giving shot 3 to worker:0:0 (0 out of 16)
+2025-10-31 13:54:33,142 - PERF       HEAD            Functional value for shot 3: loss 8.241667e-01 for shot 3
+2025-10-31 13:54:33,142 - PERF       HEAD            Retrieved gradient for shot 3 (1 out of 16)
+2025-10-31 13:54:33,142 - PERF       HEAD            
+
+2025-10-31 13:54:33,142 - PERF       HEAD            Giving shot 5 to worker:0:0 (1 out of 16)
+2025-10-31 13:57:21,400 - PERF       HEAD            Functional value for shot 5: loss 7.867337e-01 for shot 5
+2025-10-31 13:57:21,400 - PERF       HEAD            Retrieved gradient for shot 5 (2 out of 16)
+2025-10-31 13:57:21,400 - PERF       HEAD            
+
+2025-10-31 13:57:21,400 - PERF       HEAD            Giving shot 19 to worker:0:0 (2 out of 16)
+2025-10-31 14:00:10,290 - PERF       HEAD            Functional value for shot 19: loss 9.002154e-01 for shot 19
+2025-10-31 14:00:10,290 - PERF       HEAD            Retrieved gradient for shot 19 (3 out of 16)
+2025-10-31 14:00:10,290 - PERF       HEAD            
+
+2025-10-31 14:00:10,290 - PERF       HEAD            Giving shot 21 to worker:0:0 (3 out of 16)
+2025-10-31 14:02:58,735 - PERF       HEAD            Functional value for shot 21: loss 8.385961e-01 for shot 21
+2025-10-31 14:02:58,735 - PERF       HEAD            Retrieved gradient for shot 21 (4 out of 16)
+2025-10-31 14:02:58,735 - PERF       HEAD            
+
+2025-10-31 14:02:58,735 - PERF       HEAD            Giving shot 27 to worker:0:0 (4 out of 16)
+2025-10-31 14:05:47,094 - PERF       HEAD            Functional value for shot 27: loss 9.835149e-01 for shot 27
+2025-10-31 14:05:47,094 - PERF       HEAD            Retrieved gradient for shot 27 (5 out of 16)
+2025-10-31 14:05:47,095 - PERF       HEAD            
+
+2025-10-31 14:05:47,095 - PERF       HEAD            Giving shot 30 to worker:0:0 (5 out of 16)
+2025-10-31 14:08:35,835 - PERF       HEAD            Functional value for shot 30: loss 9.911270e-01 for shot 30
+2025-10-31 14:08:35,835 - PERF       HEAD            Retrieved gradient for shot 30 (6 out of 16)
+2025-10-31 14:08:35,836 - PERF       HEAD            
+
+2025-10-31 14:08:35,836 - PERF       HEAD            Giving shot 33 to worker:0:0 (6 out of 16)
+2025-10-31 14:11:24,803 - PERF       HEAD            Functional value for shot 33: loss 1.192291e+00 for shot 33
+2025-10-31 14:11:24,803 - PERF       HEAD            Retrieved gradient for shot 33 (7 out of 16)
+2025-10-31 14:11:24,803 - PERF       HEAD            
+
+2025-10-31 14:11:24,803 - PERF       HEAD            Giving shot 38 to worker:0:0 (7 out of 16)
+2025-10-31 14:14:13,961 - PERF       HEAD            Functional value for shot 38: loss 1.048228e+00 for shot 38
+2025-10-31 14:14:13,962 - PERF       HEAD            Retrieved gradient for shot 38 (8 out of 16)
+2025-10-31 14:14:13,962 - PERF       HEAD            
+
+2025-10-31 14:14:13,962 - PERF       HEAD            Giving shot 41 to worker:0:0 (8 out of 16)
+2025-10-31 14:17:02,642 - PERF       HEAD            Functional value for shot 41: loss 9.342225e-01 for shot 41
+2025-10-31 14:17:02,642 - PERF       HEAD            Retrieved gradient for shot 41 (9 out of 16)
+2025-10-31 14:17:02,642 - PERF       HEAD            
+
+2025-10-31 14:17:02,642 - PERF       HEAD            Giving shot 43 to worker:0:0 (9 out of 16)
+2025-10-31 14:19:51,627 - PERF       HEAD            Functional value for shot 43: loss 8.935308e-01 for shot 43
+2025-10-31 14:19:51,628 - PERF       HEAD            Retrieved gradient for shot 43 (10 out of 16)
+2025-10-31 14:19:51,628 - PERF       HEAD            
+
+2025-10-31 14:19:51,628 - PERF       HEAD            Giving shot 45 to worker:0:0 (10 out of 16)
+2025-10-31 14:22:40,197 - PERF       HEAD            Functional value for shot 45: loss 9.193658e-01 for shot 45
+2025-10-31 14:22:40,197 - PERF       HEAD            Retrieved gradient for shot 45 (11 out of 16)
+2025-10-31 14:22:40,197 - PERF       HEAD            
+
+2025-10-31 14:22:40,198 - PERF       HEAD            Giving shot 51 to worker:0:0 (11 out of 16)

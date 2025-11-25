@@ -1,0 +1,4 @@
+2025-08-08 10:47:59,452 - INFO       HEAD            Listening at <CommsManager object at 139767702209616, uid=head, address=ultrasound.uom.memphis.edu, port=3006, state=connected>
+2025-08-08 10:48:02,777 - PERF       HEAD            
+
+2025-08-08 10:48:02,778 - PERF       HEAD            Giving shot 0 to worker:0:0 (0 out of 236)

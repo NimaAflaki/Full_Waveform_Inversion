@@ -1,0 +1,959 @@
+2025-10-31 13:06:36,438 - PERF       WORKER:0:0      Default Devito configuration:
+2025-10-31 13:06:36,438 - PERF       WORKER:0:0      	 * autotuning=['aggressive', 'runtime']
+2025-10-31 13:06:36,438 - PERF       WORKER:0:0      	 * develop-mode=False
+2025-10-31 13:06:36,438 - PERF       WORKER:0:0      	 * mpi=False
+2025-10-31 13:06:36,438 - PERF       WORKER:0:0      	 * log-level=DEBUG
+2025-10-31 13:06:36,438 - PERF       WORKER:0:0      	 * language=openmp
+2025-10-31 13:06:36,506 - PERF       WORKER:0:0      (ShotID 1) Preparing to run state for shot
+2025-10-31 13:06:36,506 - PERF       WORKER:0:0      (ShotID 1) Selected boundary type sponge_boundary_2
+2025-10-31 13:06:36,508 - PERF       WORKER:0:0      (ShotID 1) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:06:36,508 - PERF       WORKER:0:0      (ShotID 1) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:06:36,508 - PERF       WORKER:0:0      (ShotID 1) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:06:36,508 - PERF       WORKER:0:0      (ShotID 1) Selected undersampling level 10
+2025-10-31 13:06:36,508 - PERF       WORKER:0:0      (ShotID 1) Selected time stepping scheme OT2
+2025-10-31 13:06:36,555 - PERF       WORKER:0:0      (ShotID 1) Expected wavefield size 10.7072 GB
+2025-10-31 13:06:36,555 - PERF       WORKER:0:0      Operator `acoustic_iso_state` instance configuration:
+2025-10-31 13:06:36,555 - PERF       WORKER:0:0      	 * name=acoustic_iso_state
+2025-10-31 13:06:36,555 - PERF       WORKER:0:0      	 * subs={h_x: np.float32(0.00025666665), h_y: np.float32(0.00025666668), dt: 4.57e-08}
+2025-10-31 13:06:36,555 - PERF       WORKER:0:0      	 * opt=advanced
+2025-10-31 13:06:36,555 - PERF       WORKER:0:0      	 * devicecreate=(p(t, x, y), p_saved(time_under0, x, y))
+2025-10-31 13:06:38,690 - PERF       WORKER:0:0      [1;37;32mOperator `acoustic_iso_state` generated in 2.14 s[0m
+2025-10-31 13:06:38,690 - PERF       WORKER:0:0      [1;37;32m  * lowering.Clusters: 1.57 s (73.6 %)[0m
+2025-10-31 13:06:38,690 - PERF       WORKER:0:0      [1;37;32m     * specializing.Clusters: 0.94 s (44.1 %)[0m
+2025-10-31 13:06:38,690 - PERF       WORKER:0:0      [1;37;32m        * fuse: 0.62 s (29.1 %)[0m
+2025-10-31 13:06:38,690 - PERF       WORKER:0:0      [1;37;32mFlops reduction after symbolic optimization: [338 --> 238][0m
+2025-10-31 13:06:38,798 - PERF       WORKER:0:0      [1;37;32mOperator `acoustic_iso_state` fetched `/tmp/devito-jitcache-uid1000/925c893f53597b05a80b240e70bba47413282e3b.c` in 0.11 s from jit-cache[0m
+2025-10-31 13:06:38,799 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` instance configuration:
+2025-10-31 13:06:38,799 - PERF       WORKER:0:0      	 * name=acoustic_iso_state_save
+2025-10-31 13:06:38,799 - PERF       WORKER:0:0      	 * subs={h_x: np.float32(0.00025666665), h_y: np.float32(0.00025666668), dt: 4.57e-08}
+2025-10-31 13:06:38,799 - PERF       WORKER:0:0      	 * opt=advanced
+2025-10-31 13:06:38,799 - PERF       WORKER:0:0      	 * devicecreate=(p(t, x, y), p_saved(time_under0, x, y))
+2025-10-31 13:06:40,832 - PERF       WORKER:0:0      [1;37;32mOperator `acoustic_iso_state_save` generated in 2.04 s[0m
+2025-10-31 13:06:40,832 - PERF       WORKER:0:0      [1;37;32m  * lowering.Clusters: 1.56 s (76.8 %)[0m
+2025-10-31 13:06:40,832 - PERF       WORKER:0:0      [1;37;32m     * specializing.Clusters: 0.98 s (48.3 %)[0m
+2025-10-31 13:06:40,832 - PERF       WORKER:0:0      [1;37;32m        * fuse: 0.63 s (31.0 %)[0m
+2025-10-31 13:06:40,832 - PERF       WORKER:0:0      [1;37;32mFlops reduction after symbolic optimization: [343 --> 242][0m
+2025-10-31 13:06:40,938 - PERF       WORKER:0:0      [1;37;32mOperator `acoustic_iso_state_save` fetched `/tmp/devito-jitcache-uid1000/b571875e1cebf8e2a6f65b2bf913355bfa88a03d.c` in 0.11 s from jit-cache[0m
+2025-10-31 13:06:40,950 - PERF       WORKER:0:0      (ShotID 1) Running state equation for shot
+2025-10-31 13:06:42,166 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:08:05,999 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 83.84 s
+2025-10-31 13:08:06,020 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.73 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:08:06,020 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.83 s, 0.35 GPts/s][0m
+2025-10-31 13:08:06,020 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:08:06,020 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.18 s [OI=3.17, 13.93 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:08:06,020 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.17 s [OI=0.01, 11.73 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:08:06,020 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:08:06,020 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.17 GFlops/s][0m
+2025-10-31 13:08:06,020 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.46 s [OI=0.50, 79.01 GFlops/s, 19.76 GPts/s][0m
+2025-10-31 13:08:06,020 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:08:06,020 - PERF       WORKER:0:0      (ShotID 1) Completing state equation run for shot
+2025-10-31 13:08:06,021 - PERF       WORKER:0:0      (ShotID 1) Completed state equation run for shot
+2025-10-31 13:08:06,099 - PERF       WORKER:0:0      (ShotID 1) Preparing to run adjoint for shot
+2025-10-31 13:08:06,116 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` instance configuration:
+2025-10-31 13:08:06,116 - PERF       WORKER:0:0      	 * name=acoustic_iso_adjoint
+2025-10-31 13:08:06,116 - PERF       WORKER:0:0      	 * subs={h_x: np.float32(0.00025666665), h_y: np.float32(0.00025666668), dt: 4.57e-08}
+2025-10-31 13:08:06,116 - PERF       WORKER:0:0      	 * opt=advanced
+2025-10-31 13:08:06,116 - PERF       WORKER:0:0      	 * devicecreate=(p_a(t, x, y),)
+2025-10-31 13:08:08,103 - PERF       WORKER:0:0      [1;37;32mOperator `acoustic_iso_adjoint` generated in 1.99 s[0m
+2025-10-31 13:08:08,103 - PERF       WORKER:0:0      [1;37;32m  * lowering.Clusters: 1.51 s (76.1 %)[0m
+2025-10-31 13:08:08,103 - PERF       WORKER:0:0      [1;37;32m     * specializing.Clusters: 0.89 s (44.9 %)[0m
+2025-10-31 13:08:08,103 - PERF       WORKER:0:0      [1;37;32m        * fuse: 0.59 s (29.8 %)[0m
+2025-10-31 13:08:08,103 - PERF       WORKER:0:0      [1;37;32mFlops reduction after symbolic optimization: [324 --> 234][0m
+2025-10-31 13:08:08,210 - PERF       WORKER:0:0      [1;37;32mOperator `acoustic_iso_adjoint` fetched `/tmp/devito-jitcache-uid1000/592791ad5daf3488dcd11f05eddf7d0020862b70.c` in 0.11 s from jit-cache[0m
+2025-10-31 13:08:08,223 - PERF       WORKER:0:0      (ShotID 1) Running adjoint equation for shot
+2025-10-31 13:08:08,227 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:09:31,521 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.30 s
+2025-10-31 13:09:31,541 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.68 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:09:31,541 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.30 s, 0.35 GPts/s][0m
+2025-10-31 13:09:31,541 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:09:31,541 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.81 s [OI=3.17, 14.00 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:09:31,541 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.87 s [OI=0.01, 12.01 GFlops/s, 0.26 GPts/s][0m
+2025-10-31 13:09:31,541 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.22 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:09:31,541 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.59 s [OI=0.25, 64.81 GFlops/s][0m
+2025-10-31 13:09:31,541 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:09:31,541 - PERF       WORKER:0:0      (ShotID 1) Completing adjoint equation run for shot
+2025-10-31 13:09:31,547 - PERF       WORKER:0:0      (ShotID 1) Completed adjoint equation run for shot
+2025-10-31 13:09:31,607 - PERF       WORKER:0:0      (ShotID 2) Preparing to run state for shot
+2025-10-31 13:09:31,609 - PERF       WORKER:0:0      (ShotID 2) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:09:31,609 - PERF       WORKER:0:0      (ShotID 2) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:09:31,609 - PERF       WORKER:0:0      (ShotID 2) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:09:31,609 - PERF       WORKER:0:0      (ShotID 2) Selected undersampling level 10
+2025-10-31 13:09:31,609 - PERF       WORKER:0:0      (ShotID 2) Selected time stepping scheme OT2
+2025-10-31 13:09:31,615 - PERF       WORKER:0:0      (ShotID 2) Running state equation for shot
+2025-10-31 13:09:31,616 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:10:55,774 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.16 s
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.68 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.16 s, 0.35 GPts/s][0m
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.46 s [OI=3.17, 13.88 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.21 s [OI=0.01, 11.68 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.03 s [OI=1.84, 1.17 GFlops/s][0m
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.46 s [OI=0.50, 78.77 GFlops/s, 19.70 GPts/s][0m
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      (ShotID 2) Completing state equation run for shot
+2025-10-31 13:10:55,796 - PERF       WORKER:0:0      (ShotID 2) Completed state equation run for shot
+2025-10-31 13:10:55,873 - PERF       WORKER:0:0      (ShotID 2) Preparing to run adjoint for shot
+2025-10-31 13:10:55,881 - PERF       WORKER:0:0      (ShotID 2) Running adjoint equation for shot
+2025-10-31 13:10:55,883 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:12:19,104 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.23 s
+2025-10-31 13:12:19,122 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.69 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:12:19,122 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.22 s, 0.35 GPts/s][0m
+2025-10-31 13:12:19,122 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:12:19,122 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.72 s [OI=3.17, 14.02 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:12:19,122 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.88 s [OI=0.01, 12.00 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:12:19,122 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.20 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:12:19,122 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.57 GFlops/s][0m
+2025-10-31 13:12:19,122 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:12:19,122 - PERF       WORKER:0:0      (ShotID 2) Completing adjoint equation run for shot
+2025-10-31 13:12:19,127 - PERF       WORKER:0:0      (ShotID 2) Completed adjoint equation run for shot
+2025-10-31 13:12:19,199 - PERF       WORKER:0:0      (ShotID 4) Preparing to run state for shot
+2025-10-31 13:12:19,201 - PERF       WORKER:0:0      (ShotID 4) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:12:19,201 - PERF       WORKER:0:0      (ShotID 4) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:12:19,201 - PERF       WORKER:0:0      (ShotID 4) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:12:19,201 - PERF       WORKER:0:0      (ShotID 4) Selected undersampling level 10
+2025-10-31 13:12:19,201 - PERF       WORKER:0:0      (ShotID 4) Selected time stepping scheme OT2
+2025-10-31 13:12:19,207 - PERF       WORKER:0:0      (ShotID 4) Running state equation for shot
+2025-10-31 13:12:19,208 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:13:46,336 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 87.13 s
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.18 GFlops/s, 0.33 GPts/s][0m
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [87.13 s, 0.33 GPts/s][0m
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 72.78 s [OI=3.17, 13.44 GFlops/s, 0.36 GPts/s][0m
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.85 s [OI=0.01, 11.10 GFlops/s, 0.24 GPts/s][0m
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.04 GFlops/s][0m
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.47 s [OI=0.50, 78.37 GFlops/s, 19.60 GPts/s][0m
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      (ShotID 4) Completing state equation run for shot
+2025-10-31 13:13:46,358 - PERF       WORKER:0:0      (ShotID 4) Completed state equation run for shot
+2025-10-31 13:13:46,439 - PERF       WORKER:0:0      (ShotID 4) Preparing to run adjoint for shot
+2025-10-31 13:13:46,447 - PERF       WORKER:0:0      (ShotID 4) Running adjoint equation for shot
+2025-10-31 13:13:46,449 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:15:11,462 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 85.02 s
+2025-10-31 13:15:11,480 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.38 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:15:11,484 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [85.01 s, 0.34 GPts/s][0m
+2025-10-31 13:15:11,484 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:15:11,484 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.06 s [OI=3.17, 13.75 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:15:11,484 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.30 s [OI=0.01, 11.59 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:15:11,484 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.05 s [OI=6.00, 4.70 GFlops/s, 0.08 GPts/s][0m
+2025-10-31 13:15:11,484 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.62 s [OI=0.25, 63.66 GFlops/s][0m
+2025-10-31 13:15:11,484 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:15:11,484 - PERF       WORKER:0:0      (ShotID 4) Completing adjoint equation run for shot
+2025-10-31 13:15:11,489 - PERF       WORKER:0:0      (ShotID 4) Completed adjoint equation run for shot
+2025-10-31 13:15:11,564 - PERF       WORKER:0:0      (ShotID 7) Preparing to run state for shot
+2025-10-31 13:15:11,565 - PERF       WORKER:0:0      (ShotID 7) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:15:11,565 - PERF       WORKER:0:0      (ShotID 7) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:15:11,565 - PERF       WORKER:0:0      (ShotID 7) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:15:11,565 - PERF       WORKER:0:0      (ShotID 7) Selected undersampling level 10
+2025-10-31 13:15:11,565 - PERF       WORKER:0:0      (ShotID 7) Selected time stepping scheme OT2
+2025-10-31 13:15:11,571 - PERF       WORKER:0:0      (ShotID 7) Running state equation for shot
+2025-10-31 13:15:11,573 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:16:36,560 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.99 s
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.53 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.99 s, 0.34 GPts/s][0m
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.15 s [OI=3.17, 13.75 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.37 s [OI=0.01, 11.53 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.13 GFlops/s][0m
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.56 GFlops/s, 19.89 GPts/s][0m
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      (ShotID 7) Completing state equation run for shot
+2025-10-31 13:16:36,581 - PERF       WORKER:0:0      (ShotID 7) Completed state equation run for shot
+2025-10-31 13:16:36,657 - PERF       WORKER:0:0      (ShotID 7) Preparing to run adjoint for shot
+2025-10-31 13:16:36,665 - PERF       WORKER:0:0      (ShotID 7) Running adjoint equation for shot
+2025-10-31 13:16:36,667 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:18:00,202 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.54 s
+2025-10-31 13:18:00,219 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.63 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:18:00,219 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.54 s, 0.35 GPts/s][0m
+2025-10-31 13:18:00,219 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:18:00,219 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.93 s [OI=3.17, 13.97 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:18:00,219 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.97 s [OI=0.01, 11.91 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:18:00,219 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.05 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:18:00,219 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.61 s [OI=0.25, 64.20 GFlops/s][0m
+2025-10-31 13:18:00,219 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:18:00,219 - PERF       WORKER:0:0      (ShotID 7) Completing adjoint equation run for shot
+2025-10-31 13:18:00,224 - PERF       WORKER:0:0      (ShotID 7) Completed adjoint equation run for shot
+2025-10-31 13:18:00,296 - PERF       WORKER:0:0      (ShotID 8) Preparing to run state for shot
+2025-10-31 13:18:00,298 - PERF       WORKER:0:0      (ShotID 8) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:18:00,298 - PERF       WORKER:0:0      (ShotID 8) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:18:00,298 - PERF       WORKER:0:0      (ShotID 8) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:18:00,298 - PERF       WORKER:0:0      (ShotID 8) Selected undersampling level 10
+2025-10-31 13:18:00,298 - PERF       WORKER:0:0      (ShotID 8) Selected time stepping scheme OT2
+2025-10-31 13:18:00,304 - PERF       WORKER:0:0      (ShotID 8) Running state equation for shot
+2025-10-31 13:18:00,306 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:19:25,022 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.72 s
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.58 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.72 s, 0.34 GPts/s][0m
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.90 s [OI=3.17, 13.79 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.34 s [OI=0.01, 11.56 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.53 GFlops/s, 19.89 GPts/s][0m
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      (ShotID 8) Completing state equation run for shot
+2025-10-31 13:19:25,043 - PERF       WORKER:0:0      (ShotID 8) Completed state equation run for shot
+2025-10-31 13:19:25,120 - PERF       WORKER:0:0      (ShotID 8) Preparing to run adjoint for shot
+2025-10-31 13:19:25,129 - PERF       WORKER:0:0      (ShotID 8) Running adjoint equation for shot
+2025-10-31 13:19:25,130 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:20:48,695 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.57 s
+2025-10-31 13:20:48,712 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.63 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:20:48,712 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.57 s, 0.35 GPts/s][0m
+2025-10-31 13:20:48,712 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:20:48,712 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.96 s [OI=3.17, 13.97 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:20:48,712 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.97 s [OI=0.01, 11.91 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:20:48,712 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.04 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:20:48,712 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.38 GFlops/s][0m
+2025-10-31 13:20:48,712 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:20:48,712 - PERF       WORKER:0:0      (ShotID 8) Completing adjoint equation run for shot
+2025-10-31 13:20:48,717 - PERF       WORKER:0:0      (ShotID 8) Completed adjoint equation run for shot
+2025-10-31 13:20:48,783 - PERF       WORKER:0:0      (ShotID 11) Preparing to run state for shot
+2025-10-31 13:20:48,785 - PERF       WORKER:0:0      (ShotID 11) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:20:48,785 - PERF       WORKER:0:0      (ShotID 11) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:20:48,785 - PERF       WORKER:0:0      (ShotID 11) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:20:48,785 - PERF       WORKER:0:0      (ShotID 11) Selected undersampling level 10
+2025-10-31 13:20:48,785 - PERF       WORKER:0:0      (ShotID 11) Selected time stepping scheme OT2
+2025-10-31 13:20:48,791 - PERF       WORKER:0:0      (ShotID 11) Running state equation for shot
+2025-10-31 13:20:48,793 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:22:13,927 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 85.14 s
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.51 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [85.13 s, 0.34 GPts/s][0m
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.26 s [OI=3.17, 13.72 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.40 s [OI=0.01, 11.51 GFlops/s, 0.24 GPts/s][0m
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.12 GFlops/s][0m
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.41 GFlops/s, 19.86 GPts/s][0m
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      (ShotID 11) Completing state equation run for shot
+2025-10-31 13:22:13,948 - PERF       WORKER:0:0      (ShotID 11) Completed state equation run for shot
+2025-10-31 13:22:14,026 - PERF       WORKER:0:0      (ShotID 11) Preparing to run adjoint for shot
+2025-10-31 13:22:14,034 - PERF       WORKER:0:0      (ShotID 11) Running adjoint equation for shot
+2025-10-31 13:22:14,036 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:23:37,706 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.67 s
+2025-10-31 13:23:37,724 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.61 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:23:37,724 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.67 s, 0.35 GPts/s][0m
+2025-10-31 13:23:37,724 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:23:37,724 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.03 s [OI=3.17, 13.95 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:23:37,724 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.02 s [OI=0.01, 11.87 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:23:37,724 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.02 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:23:37,724 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.32 GFlops/s][0m
+2025-10-31 13:23:37,724 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:23:37,724 - PERF       WORKER:0:0      (ShotID 11) Completing adjoint equation run for shot
+2025-10-31 13:23:37,729 - PERF       WORKER:0:0      (ShotID 11) Completed adjoint equation run for shot
+2025-10-31 13:23:37,802 - PERF       WORKER:0:0      (ShotID 14) Preparing to run state for shot
+2025-10-31 13:23:37,804 - PERF       WORKER:0:0      (ShotID 14) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:23:37,804 - PERF       WORKER:0:0      (ShotID 14) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:23:37,804 - PERF       WORKER:0:0      (ShotID 14) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:23:37,804 - PERF       WORKER:0:0      (ShotID 14) Selected undersampling level 10
+2025-10-31 13:23:37,804 - PERF       WORKER:0:0      (ShotID 14) Selected time stepping scheme OT2
+2025-10-31 13:23:37,810 - PERF       WORKER:0:0      (ShotID 14) Running state equation for shot
+2025-10-31 13:23:37,811 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:25:02,653 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.85 s
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.56 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.84 s, 0.34 GPts/s][0m
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.03 s [OI=3.17, 13.77 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.35 s [OI=0.01, 11.56 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.13 GFlops/s][0m
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.44 s [OI=0.50, 79.73 GFlops/s, 19.94 GPts/s][0m
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      (ShotID 14) Completing state equation run for shot
+2025-10-31 13:25:02,716 - PERF       WORKER:0:0      (ShotID 14) Completed state equation run for shot
+2025-10-31 13:25:02,792 - PERF       WORKER:0:0      (ShotID 14) Preparing to run adjoint for shot
+2025-10-31 13:25:02,800 - PERF       WORKER:0:0      (ShotID 14) Running adjoint equation for shot
+2025-10-31 13:25:02,801 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:26:26,267 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.47 s
+2025-10-31 13:26:26,284 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.65 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:26:26,284 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.47 s, 0.35 GPts/s][0m
+2025-10-31 13:26:26,284 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:26:26,284 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.87 s [OI=3.17, 13.98 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:26:26,284 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.97 s [OI=0.01, 11.91 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:26:26,284 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.03 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:26:26,284 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.44 GFlops/s][0m
+2025-10-31 13:26:26,284 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:26:26,284 - PERF       WORKER:0:0      (ShotID 14) Completing adjoint equation run for shot
+2025-10-31 13:26:26,289 - PERF       WORKER:0:0      (ShotID 14) Completed adjoint equation run for shot
+2025-10-31 13:26:26,365 - PERF       WORKER:0:0      (ShotID 17) Preparing to run state for shot
+2025-10-31 13:26:26,366 - PERF       WORKER:0:0      (ShotID 17) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:26:26,366 - PERF       WORKER:0:0      (ShotID 17) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:26:26,366 - PERF       WORKER:0:0      (ShotID 17) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:26:26,367 - PERF       WORKER:0:0      (ShotID 17) Selected undersampling level 10
+2025-10-31 13:26:26,367 - PERF       WORKER:0:0      (ShotID 17) Selected time stepping scheme OT2
+2025-10-31 13:26:26,371 - PERF       WORKER:0:0      (ShotID 17) Running state equation for shot
+2025-10-31 13:26:26,373 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:27:50,977 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.61 s
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.60 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.60 s, 0.34 GPts/s][0m
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.81 s [OI=3.17, 13.81 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.32 s [OI=0.01, 11.58 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.52 GFlops/s, 19.88 GPts/s][0m
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      (ShotID 17) Completing state equation run for shot
+2025-10-31 13:27:50,998 - PERF       WORKER:0:0      (ShotID 17) Completed state equation run for shot
+2025-10-31 13:27:51,075 - PERF       WORKER:0:0      (ShotID 17) Preparing to run adjoint for shot
+2025-10-31 13:27:51,083 - PERF       WORKER:0:0      (ShotID 17) Running adjoint equation for shot
+2025-10-31 13:27:51,085 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:29:14,921 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.84 s
+2025-10-31 13:29:14,938 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.58 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:29:14,938 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.84 s, 0.35 GPts/s][0m
+2025-10-31 13:29:14,938 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:29:14,938 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.21 s [OI=3.17, 13.92 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:29:14,938 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.99 s [OI=0.01, 11.89 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:29:14,938 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.03 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:29:14,938 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.61 s [OI=0.25, 64.12 GFlops/s][0m
+2025-10-31 13:29:14,938 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:29:14,938 - PERF       WORKER:0:0      (ShotID 17) Completing adjoint equation run for shot
+2025-10-31 13:29:14,944 - PERF       WORKER:0:0      (ShotID 17) Completed adjoint equation run for shot
+2025-10-31 13:29:15,019 - PERF       WORKER:0:0      (ShotID 18) Preparing to run state for shot
+2025-10-31 13:29:15,021 - PERF       WORKER:0:0      (ShotID 18) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:29:15,021 - PERF       WORKER:0:0      (ShotID 18) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:29:15,021 - PERF       WORKER:0:0      (ShotID 18) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:29:15,021 - PERF       WORKER:0:0      (ShotID 18) Selected undersampling level 10
+2025-10-31 13:29:15,021 - PERF       WORKER:0:0      (ShotID 18) Selected time stepping scheme OT2
+2025-10-31 13:29:15,026 - PERF       WORKER:0:0      (ShotID 18) Running state equation for shot
+2025-10-31 13:29:15,028 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:30:39,831 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.81 s
+2025-10-31 13:30:39,852 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.57 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:30:39,852 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.80 s, 0.34 GPts/s][0m
+2025-10-31 13:30:39,852 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:30:39,852 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.99 s [OI=3.17, 13.78 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:30:39,852 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.34 s [OI=0.01, 11.57 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:30:39,852 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:30:39,852 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:30:39,852 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.17 GFlops/s, 19.80 GPts/s][0m
+2025-10-31 13:30:39,852 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:30:39,852 - PERF       WORKER:0:0      (ShotID 18) Completing state equation run for shot
+2025-10-31 13:30:39,853 - PERF       WORKER:0:0      (ShotID 18) Completed state equation run for shot
+2025-10-31 13:30:39,928 - PERF       WORKER:0:0      (ShotID 18) Preparing to run adjoint for shot
+2025-10-31 13:30:39,936 - PERF       WORKER:0:0      (ShotID 18) Running adjoint equation for shot
+2025-10-31 13:30:39,938 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:32:03,518 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.58 s
+2025-10-31 13:32:03,536 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.63 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:32:03,536 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.58 s, 0.35 GPts/s][0m
+2025-10-31 13:32:03,536 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:32:03,536 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.99 s [OI=3.17, 13.96 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:32:03,536 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.96 s [OI=0.01, 11.92 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:32:03,536 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.04 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:32:03,536 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.27 GFlops/s][0m
+2025-10-31 13:32:03,536 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:32:03,536 - PERF       WORKER:0:0      (ShotID 18) Completing adjoint equation run for shot
+2025-10-31 13:32:03,541 - PERF       WORKER:0:0      (ShotID 18) Completed adjoint equation run for shot
+2025-10-31 13:32:03,611 - PERF       WORKER:0:0      (ShotID 22) Preparing to run state for shot
+2025-10-31 13:32:03,613 - PERF       WORKER:0:0      (ShotID 22) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:32:03,613 - PERF       WORKER:0:0      (ShotID 22) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:32:03,613 - PERF       WORKER:0:0      (ShotID 22) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:32:03,613 - PERF       WORKER:0:0      (ShotID 22) Selected undersampling level 10
+2025-10-31 13:32:03,613 - PERF       WORKER:0:0      (ShotID 22) Selected time stepping scheme OT2
+2025-10-31 13:32:03,618 - PERF       WORKER:0:0      (ShotID 22) Running state equation for shot
+2025-10-31 13:32:03,620 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:33:28,423 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.81 s
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.57 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.80 s, 0.34 GPts/s][0m
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.97 s [OI=3.17, 13.78 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.36 s [OI=0.01, 11.55 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.57 GFlops/s, 19.90 GPts/s][0m
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      (ShotID 22) Completing state equation run for shot
+2025-10-31 13:33:28,444 - PERF       WORKER:0:0      (ShotID 22) Completed state equation run for shot
+2025-10-31 13:33:28,522 - PERF       WORKER:0:0      (ShotID 22) Preparing to run adjoint for shot
+2025-10-31 13:33:28,530 - PERF       WORKER:0:0      (ShotID 22) Running adjoint equation for shot
+2025-10-31 13:33:28,532 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:34:52,224 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.70 s
+2025-10-31 13:34:52,241 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.61 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:34:52,241 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.69 s, 0.35 GPts/s][0m
+2025-10-31 13:34:52,241 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:34:52,241 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.08 s [OI=3.17, 13.94 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:34:52,241 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.99 s [OI=0.01, 11.90 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:34:52,241 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.02 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:34:52,241 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.40 GFlops/s][0m
+2025-10-31 13:34:52,241 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:34:52,241 - PERF       WORKER:0:0      (ShotID 22) Completing adjoint equation run for shot
+2025-10-31 13:34:52,246 - PERF       WORKER:0:0      (ShotID 22) Completed adjoint equation run for shot
+2025-10-31 13:34:52,314 - PERF       WORKER:0:0      (ShotID 24) Preparing to run state for shot
+2025-10-31 13:34:52,316 - PERF       WORKER:0:0      (ShotID 24) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:34:52,316 - PERF       WORKER:0:0      (ShotID 24) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:34:52,316 - PERF       WORKER:0:0      (ShotID 24) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:34:52,316 - PERF       WORKER:0:0      (ShotID 24) Selected undersampling level 10
+2025-10-31 13:34:52,316 - PERF       WORKER:0:0      (ShotID 24) Selected time stepping scheme OT2
+2025-10-31 13:34:52,322 - PERF       WORKER:0:0      (ShotID 24) Running state equation for shot
+2025-10-31 13:34:52,323 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:36:17,162 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.84 s
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.56 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.84 s, 0.34 GPts/s][0m
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.03 s [OI=3.17, 13.77 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.34 s [OI=0.01, 11.57 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.29 GFlops/s, 19.83 GPts/s][0m
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      (ShotID 24) Completing state equation run for shot
+2025-10-31 13:36:17,183 - PERF       WORKER:0:0      (ShotID 24) Completed state equation run for shot
+2025-10-31 13:36:17,261 - PERF       WORKER:0:0      (ShotID 24) Preparing to run adjoint for shot
+2025-10-31 13:36:17,269 - PERF       WORKER:0:0      (ShotID 24) Running adjoint equation for shot
+2025-10-31 13:36:17,271 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:37:40,883 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.62 s
+2025-10-31 13:37:40,900 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.62 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:37:40,900 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.61 s, 0.35 GPts/s][0m
+2025-10-31 13:37:40,900 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:37:40,900 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.05 s [OI=3.17, 13.95 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:37:40,900 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.94 s [OI=0.01, 11.94 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:37:40,900 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.05 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:37:40,900 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.41 GFlops/s][0m
+2025-10-31 13:37:40,900 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:37:40,900 - PERF       WORKER:0:0      (ShotID 24) Completing adjoint equation run for shot
+2025-10-31 13:37:40,906 - PERF       WORKER:0:0      (ShotID 24) Completed adjoint equation run for shot
+2025-10-31 13:37:40,983 - PERF       WORKER:0:0      (ShotID 25) Preparing to run state for shot
+2025-10-31 13:37:40,985 - PERF       WORKER:0:0      (ShotID 25) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:37:40,986 - PERF       WORKER:0:0      (ShotID 25) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:37:40,986 - PERF       WORKER:0:0      (ShotID 25) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:37:40,986 - PERF       WORKER:0:0      (ShotID 25) Selected undersampling level 10
+2025-10-31 13:37:40,986 - PERF       WORKER:0:0      (ShotID 25) Selected time stepping scheme OT2
+2025-10-31 13:37:40,994 - PERF       WORKER:0:0      (ShotID 25) Running state equation for shot
+2025-10-31 13:37:40,995 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:39:05,651 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.66 s
+2025-10-31 13:39:05,672 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.59 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:39:05,672 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.66 s, 0.34 GPts/s][0m
+2025-10-31 13:39:05,672 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:39:05,672 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.84 s [OI=3.17, 13.80 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:39:05,672 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.34 s [OI=0.01, 11.56 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:39:05,672 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:39:05,672 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:39:05,672 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.50 GFlops/s, 19.88 GPts/s][0m
+2025-10-31 13:39:05,672 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:39:05,672 - PERF       WORKER:0:0      (ShotID 25) Completing state equation run for shot
+2025-10-31 13:39:05,673 - PERF       WORKER:0:0      (ShotID 25) Completed state equation run for shot
+2025-10-31 13:39:05,748 - PERF       WORKER:0:0      (ShotID 25) Preparing to run adjoint for shot
+2025-10-31 13:39:05,756 - PERF       WORKER:0:0      (ShotID 25) Running adjoint equation for shot
+2025-10-31 13:39:05,758 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:40:29,438 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.68 s
+2025-10-31 13:40:29,456 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.61 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:40:29,456 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.68 s, 0.35 GPts/s][0m
+2025-10-31 13:40:29,456 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:40:29,456 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.07 s [OI=3.17, 13.94 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:40:29,456 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.98 s [OI=0.01, 11.90 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:40:29,456 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.02 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:40:29,456 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.47 GFlops/s][0m
+2025-10-31 13:40:29,456 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:40:29,456 - PERF       WORKER:0:0      (ShotID 25) Completing adjoint equation run for shot
+2025-10-31 13:40:29,462 - PERF       WORKER:0:0      (ShotID 25) Completed adjoint equation run for shot
+2025-10-31 13:40:29,533 - PERF       WORKER:0:0      (ShotID 32) Preparing to run state for shot
+2025-10-31 13:40:29,535 - PERF       WORKER:0:0      (ShotID 32) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:40:29,535 - PERF       WORKER:0:0      (ShotID 32) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:40:29,535 - PERF       WORKER:0:0      (ShotID 32) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:40:29,535 - PERF       WORKER:0:0      (ShotID 32) Selected undersampling level 10
+2025-10-31 13:40:29,535 - PERF       WORKER:0:0      (ShotID 32) Selected time stepping scheme OT2
+2025-10-31 13:40:29,542 - PERF       WORKER:0:0      (ShotID 32) Running state equation for shot
+2025-10-31 13:40:29,543 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:41:54,322 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.78 s
+2025-10-31 13:41:54,343 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.57 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:41:54,343 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.78 s, 0.34 GPts/s][0m
+2025-10-31 13:41:54,343 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:41:54,343 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.97 s [OI=3.17, 13.78 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:41:54,343 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.34 s [OI=0.01, 11.56 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:41:54,343 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:41:54,343 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.13 GFlops/s][0m
+2025-10-31 13:41:54,343 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.66 GFlops/s, 19.92 GPts/s][0m
+2025-10-31 13:41:54,343 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:41:54,343 - PERF       WORKER:0:0      (ShotID 32) Completing state equation run for shot
+2025-10-31 13:41:54,344 - PERF       WORKER:0:0      (ShotID 32) Completed state equation run for shot
+2025-10-31 13:41:54,419 - PERF       WORKER:0:0      (ShotID 32) Preparing to run adjoint for shot
+2025-10-31 13:41:54,428 - PERF       WORKER:0:0      (ShotID 32) Running adjoint equation for shot
+2025-10-31 13:41:54,429 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:43:18,034 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.61 s
+2025-10-31 13:43:18,051 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.62 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:43:18,051 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.61 s, 0.35 GPts/s][0m
+2025-10-31 13:43:18,051 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:43:18,051 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.02 s [OI=3.17, 13.95 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:43:18,051 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.96 s [OI=0.01, 11.92 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:43:18,051 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.03 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:43:18,051 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.49 GFlops/s][0m
+2025-10-31 13:43:18,051 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:43:18,052 - PERF       WORKER:0:0      (ShotID 32) Completing adjoint equation run for shot
+2025-10-31 13:43:18,057 - PERF       WORKER:0:0      (ShotID 32) Completed adjoint equation run for shot
+2025-10-31 13:43:18,125 - PERF       WORKER:0:0      (ShotID 36) Preparing to run state for shot
+2025-10-31 13:43:18,127 - PERF       WORKER:0:0      (ShotID 36) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:43:18,127 - PERF       WORKER:0:0      (ShotID 36) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:43:18,127 - PERF       WORKER:0:0      (ShotID 36) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:43:18,127 - PERF       WORKER:0:0      (ShotID 36) Selected undersampling level 10
+2025-10-31 13:43:18,127 - PERF       WORKER:0:0      (ShotID 36) Selected time stepping scheme OT2
+2025-10-31 13:43:18,133 - PERF       WORKER:0:0      (ShotID 36) Running state equation for shot
+2025-10-31 13:43:18,134 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:44:42,850 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.72 s
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.58 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.72 s, 0.34 GPts/s][0m
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.91 s [OI=3.17, 13.79 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.34 s [OI=0.01, 11.56 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.58 GFlops/s, 19.90 GPts/s][0m
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      (ShotID 36) Completing state equation run for shot
+2025-10-31 13:44:42,871 - PERF       WORKER:0:0      (ShotID 36) Completed state equation run for shot
+2025-10-31 13:44:42,947 - PERF       WORKER:0:0      (ShotID 36) Preparing to run adjoint for shot
+2025-10-31 13:44:42,954 - PERF       WORKER:0:0      (ShotID 36) Running adjoint equation for shot
+2025-10-31 13:44:42,956 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:46:06,565 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.61 s
+2025-10-31 13:46:06,582 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.62 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:46:06,582 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.61 s, 0.35 GPts/s][0m
+2025-10-31 13:46:06,582 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:46:06,582 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.99 s [OI=3.17, 13.96 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:46:06,582 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.99 s [OI=0.01, 11.89 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:46:06,582 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.03 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:46:06,582 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.49 GFlops/s][0m
+2025-10-31 13:46:06,582 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:46:06,582 - PERF       WORKER:0:0      (ShotID 36) Completing adjoint equation run for shot
+2025-10-31 13:46:06,588 - PERF       WORKER:0:0      (ShotID 36) Completed adjoint equation run for shot
+2025-10-31 13:46:06,655 - PERF       WORKER:0:0      (ShotID 40) Preparing to run state for shot
+2025-10-31 13:46:06,656 - PERF       WORKER:0:0      (ShotID 40) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:46:06,656 - PERF       WORKER:0:0      (ShotID 40) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:46:06,656 - PERF       WORKER:0:0      (ShotID 40) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:46:06,656 - PERF       WORKER:0:0      (ShotID 40) Selected undersampling level 10
+2025-10-31 13:46:06,656 - PERF       WORKER:0:0      (ShotID 40) Selected time stepping scheme OT2
+2025-10-31 13:46:06,662 - PERF       WORKER:0:0      (ShotID 40) Running state equation for shot
+2025-10-31 13:46:06,664 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:47:31,529 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.87 s
+2025-10-31 13:47:31,550 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.56 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:47:31,550 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.87 s, 0.34 GPts/s][0m
+2025-10-31 13:47:31,550 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:47:31,550 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.01 s [OI=3.17, 13.77 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:47:31,550 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.38 s [OI=0.01, 11.53 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:47:31,550 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:47:31,550 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:47:31,550 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.40 GFlops/s, 19.85 GPts/s][0m
+2025-10-31 13:47:31,550 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:47:31,551 - PERF       WORKER:0:0      (ShotID 40) Completing state equation run for shot
+2025-10-31 13:47:31,551 - PERF       WORKER:0:0      (ShotID 40) Completed state equation run for shot
+2025-10-31 13:47:31,629 - PERF       WORKER:0:0      (ShotID 40) Preparing to run adjoint for shot
+2025-10-31 13:47:31,637 - PERF       WORKER:0:0      (ShotID 40) Running adjoint equation for shot
+2025-10-31 13:47:31,638 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:48:55,386 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.75 s
+2025-10-31 13:48:55,404 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.60 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:48:55,404 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.75 s, 0.35 GPts/s][0m
+2025-10-31 13:48:55,404 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:48:55,404 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.10 s [OI=3.17, 13.94 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:48:55,404 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.02 s [OI=0.01, 11.86 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:48:55,404 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.01 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:48:55,404 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.31 GFlops/s][0m
+2025-10-31 13:48:55,404 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:48:55,404 - PERF       WORKER:0:0      (ShotID 40) Completing adjoint equation run for shot
+2025-10-31 13:48:55,409 - PERF       WORKER:0:0      (ShotID 40) Completed adjoint equation run for shot
+2025-10-31 13:48:55,487 - PERF       WORKER:0:0      (ShotID 62) Preparing to run state for shot
+2025-10-31 13:48:55,489 - PERF       WORKER:0:0      (ShotID 62) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:48:55,489 - PERF       WORKER:0:0      (ShotID 62) Spatial grid spacing (0.257 mm | 14.037 PPW) is below dispersion limit (0.721 mm | 5.000 PPW)
+2025-10-31 13:48:55,489 - PERF       WORKER:0:0      (ShotID 62) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.048 μs)
+2025-10-31 13:48:55,489 - PERF       WORKER:0:0      (ShotID 62) Selected undersampling level 10
+2025-10-31 13:48:55,489 - PERF       WORKER:0:0      (ShotID 62) Selected time stepping scheme OT2
+2025-10-31 13:48:55,495 - PERF       WORKER:0:0      (ShotID 62) Running state equation for shot
+2025-10-31 13:48:55,496 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:50:20,431 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.94 s
+2025-10-31 13:50:20,452 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.54 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:50:20,452 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.94 s, 0.34 GPts/s][0m
+2025-10-31 13:50:20,452 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:50:20,452 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.11 s [OI=3.17, 13.75 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:50:20,452 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.35 s [OI=0.01, 11.55 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:50:20,452 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:50:20,452 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:50:20,452 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.50 GFlops/s, 19.88 GPts/s][0m
+2025-10-31 13:50:20,452 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:50:20,453 - PERF       WORKER:0:0      (ShotID 62) Completing state equation run for shot
+2025-10-31 13:50:20,453 - PERF       WORKER:0:0      (ShotID 62) Completed state equation run for shot
+2025-10-31 13:50:20,529 - PERF       WORKER:0:0      (ShotID 62) Preparing to run adjoint for shot
+2025-10-31 13:50:20,538 - PERF       WORKER:0:0      (ShotID 62) Running adjoint equation for shot
+2025-10-31 13:50:20,539 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:51:44,281 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.75 s
+2025-10-31 13:51:44,299 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.60 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:51:44,299 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.74 s, 0.35 GPts/s][0m
+2025-10-31 13:51:44,299 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:51:44,299 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.13 s [OI=3.17, 13.93 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:51:44,299 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.99 s [OI=0.01, 11.89 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:51:44,299 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.04 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:51:44,299 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.41 GFlops/s][0m
+2025-10-31 13:51:44,299 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:51:44,299 - PERF       WORKER:0:0      (ShotID 62) Completing adjoint equation run for shot
+2025-10-31 13:51:44,304 - PERF       WORKER:0:0      (ShotID 62) Completed adjoint equation run for shot
+2025-10-31 13:51:44,974 - PERF       WORKER:0:0      (ShotID 3) Preparing to run state for shot
+2025-10-31 13:51:44,976 - PERF       WORKER:0:0      (ShotID 3) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:51:44,976 - PERF       WORKER:0:0      (ShotID 3) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 13:51:44,976 - PERF       WORKER:0:0      (ShotID 3) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 13:51:44,976 - PERF       WORKER:0:0      (ShotID 3) Selected undersampling level 10
+2025-10-31 13:51:44,976 - PERF       WORKER:0:0      (ShotID 3) Selected time stepping scheme OT2
+2025-10-31 13:51:44,981 - PERF       WORKER:0:0      (ShotID 3) Running state equation for shot
+2025-10-31 13:51:44,983 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:53:09,666 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.69 s
+2025-10-31 13:53:09,688 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.59 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:53:09,688 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.68 s, 0.34 GPts/s][0m
+2025-10-31 13:53:09,688 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:53:09,688 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.86 s [OI=3.17, 13.80 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:53:09,688 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.35 s [OI=0.01, 11.55 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:53:09,688 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:53:09,688 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:53:09,688 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.56 GFlops/s, 19.89 GPts/s][0m
+2025-10-31 13:53:09,688 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:53:09,688 - PERF       WORKER:0:0      (ShotID 3) Completing state equation run for shot
+2025-10-31 13:53:09,689 - PERF       WORKER:0:0      (ShotID 3) Completed state equation run for shot
+2025-10-31 13:53:09,765 - PERF       WORKER:0:0      (ShotID 3) Preparing to run adjoint for shot
+2025-10-31 13:53:09,774 - PERF       WORKER:0:0      (ShotID 3) Running adjoint equation for shot
+2025-10-31 13:53:09,775 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:54:33,096 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.33 s
+2025-10-31 13:54:33,113 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.67 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:54:33,114 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.32 s, 0.35 GPts/s][0m
+2025-10-31 13:54:33,114 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:54:33,114 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.77 s [OI=3.17, 14.01 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:54:33,114 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.93 s [OI=0.01, 11.95 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:54:33,114 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.06 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:54:33,114 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.59 GFlops/s][0m
+2025-10-31 13:54:33,114 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:54:33,114 - PERF       WORKER:0:0      (ShotID 3) Completing adjoint equation run for shot
+2025-10-31 13:54:33,119 - PERF       WORKER:0:0      (ShotID 3) Completed adjoint equation run for shot
+2025-10-31 13:54:33,183 - PERF       WORKER:0:0      (ShotID 5) Preparing to run state for shot
+2025-10-31 13:54:33,185 - PERF       WORKER:0:0      (ShotID 5) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:54:33,185 - PERF       WORKER:0:0      (ShotID 5) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 13:54:33,185 - PERF       WORKER:0:0      (ShotID 5) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 13:54:33,185 - PERF       WORKER:0:0      (ShotID 5) Selected undersampling level 10
+2025-10-31 13:54:33,185 - PERF       WORKER:0:0      (ShotID 5) Selected time stepping scheme OT2
+2025-10-31 13:54:33,191 - PERF       WORKER:0:0      (ShotID 5) Running state equation for shot
+2025-10-31 13:54:33,193 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:55:57,911 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.72 s
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.58 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.72 s, 0.34 GPts/s][0m
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.90 s [OI=3.17, 13.79 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.34 s [OI=0.01, 11.56 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.37 GFlops/s, 19.85 GPts/s][0m
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      (ShotID 5) Completing state equation run for shot
+2025-10-31 13:55:57,932 - PERF       WORKER:0:0      (ShotID 5) Completed state equation run for shot
+2025-10-31 13:55:58,009 - PERF       WORKER:0:0      (ShotID 5) Preparing to run adjoint for shot
+2025-10-31 13:55:58,018 - PERF       WORKER:0:0      (ShotID 5) Running adjoint equation for shot
+2025-10-31 13:55:58,019 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:57:21,354 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.34 s
+2025-10-31 13:57:21,372 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.67 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 13:57:21,372 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.34 s, 0.35 GPts/s][0m
+2025-10-31 13:57:21,372 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:57:21,372 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.77 s [OI=3.17, 14.01 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:57:21,372 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.94 s [OI=0.01, 11.94 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 13:57:21,372 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.05 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 13:57:21,372 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.38 GFlops/s][0m
+2025-10-31 13:57:21,372 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:57:21,372 - PERF       WORKER:0:0      (ShotID 5) Completing adjoint equation run for shot
+2025-10-31 13:57:21,377 - PERF       WORKER:0:0      (ShotID 5) Completed adjoint equation run for shot
+2025-10-31 13:57:21,452 - PERF       WORKER:0:0      (ShotID 19) Preparing to run state for shot
+2025-10-31 13:57:21,453 - PERF       WORKER:0:0      (ShotID 19) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 13:57:21,454 - PERF       WORKER:0:0      (ShotID 19) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 13:57:21,454 - PERF       WORKER:0:0      (ShotID 19) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 13:57:21,454 - PERF       WORKER:0:0      (ShotID 19) Selected undersampling level 10
+2025-10-31 13:57:21,454 - PERF       WORKER:0:0      (ShotID 19) Selected time stepping scheme OT2
+2025-10-31 13:57:21,459 - PERF       WORKER:0:0      (ShotID 19) Running state equation for shot
+2025-10-31 13:57:21,461 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 13:58:46,621 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 85.16 s
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.51 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [85.16 s, 0.34 GPts/s][0m
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.30 s [OI=3.17, 13.72 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.39 s [OI=0.01, 11.52 GFlops/s, 0.24 GPts/s][0m
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.13 GFlops/s][0m
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.69 GFlops/s, 19.93 GPts/s][0m
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      (ShotID 19) Completing state equation run for shot
+2025-10-31 13:58:46,642 - PERF       WORKER:0:0      (ShotID 19) Completed state equation run for shot
+2025-10-31 13:58:46,723 - PERF       WORKER:0:0      (ShotID 19) Preparing to run adjoint for shot
+2025-10-31 13:58:46,731 - PERF       WORKER:0:0      (ShotID 19) Running adjoint equation for shot
+2025-10-31 13:58:46,733 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:00:10,244 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.52 s
+2025-10-31 14:00:10,261 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.64 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 14:00:10,261 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.51 s, 0.35 GPts/s][0m
+2025-10-31 14:00:10,261 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:00:10,261 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.91 s [OI=3.17, 13.98 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:00:10,261 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.98 s [OI=0.01, 11.90 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:00:10,261 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.08 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 14:00:10,261 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.54 GFlops/s][0m
+2025-10-31 14:00:10,261 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:00:10,261 - PERF       WORKER:0:0      (ShotID 19) Completing adjoint equation run for shot
+2025-10-31 14:00:10,266 - PERF       WORKER:0:0      (ShotID 19) Completed adjoint equation run for shot
+2025-10-31 14:00:10,344 - PERF       WORKER:0:0      (ShotID 21) Preparing to run state for shot
+2025-10-31 14:00:10,346 - PERF       WORKER:0:0      (ShotID 21) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 14:00:10,346 - PERF       WORKER:0:0      (ShotID 21) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 14:00:10,346 - PERF       WORKER:0:0      (ShotID 21) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 14:00:10,346 - PERF       WORKER:0:0      (ShotID 21) Selected undersampling level 10
+2025-10-31 14:00:10,346 - PERF       WORKER:0:0      (ShotID 21) Selected time stepping scheme OT2
+2025-10-31 14:00:10,352 - PERF       WORKER:0:0      (ShotID 21) Running state equation for shot
+2025-10-31 14:00:10,354 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:01:34,925 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.58 s
+2025-10-31 14:01:34,946 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.61 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 14:01:34,946 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.57 s, 0.34 GPts/s][0m
+2025-10-31 14:01:34,946 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:01:34,946 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.76 s [OI=3.17, 13.82 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:01:34,946 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.33 s [OI=0.01, 11.57 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:01:34,946 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 14:01:34,946 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 14:01:34,946 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.34 GFlops/s, 19.84 GPts/s][0m
+2025-10-31 14:01:34,946 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:01:34,947 - PERF       WORKER:0:0      (ShotID 21) Completing state equation run for shot
+2025-10-31 14:01:34,947 - PERF       WORKER:0:0      (ShotID 21) Completed state equation run for shot
+2025-10-31 14:01:35,022 - PERF       WORKER:0:0      (ShotID 21) Preparing to run adjoint for shot
+2025-10-31 14:01:35,031 - PERF       WORKER:0:0      (ShotID 21) Running adjoint equation for shot
+2025-10-31 14:01:35,032 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:02:58,689 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.66 s
+2025-10-31 14:02:58,707 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.61 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 14:02:58,707 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.66 s, 0.35 GPts/s][0m
+2025-10-31 14:02:58,707 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:02:58,707 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.05 s [OI=3.17, 13.95 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:02:58,707 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.98 s [OI=0.01, 11.90 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:02:58,707 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.04 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 14:02:58,707 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.34 GFlops/s][0m
+2025-10-31 14:02:58,707 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:02:58,707 - PERF       WORKER:0:0      (ShotID 21) Completing adjoint equation run for shot
+2025-10-31 14:02:58,712 - PERF       WORKER:0:0      (ShotID 21) Completed adjoint equation run for shot
+2025-10-31 14:02:58,788 - PERF       WORKER:0:0      (ShotID 27) Preparing to run state for shot
+2025-10-31 14:02:58,790 - PERF       WORKER:0:0      (ShotID 27) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 14:02:58,790 - PERF       WORKER:0:0      (ShotID 27) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 14:02:58,790 - PERF       WORKER:0:0      (ShotID 27) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 14:02:58,790 - PERF       WORKER:0:0      (ShotID 27) Selected undersampling level 10
+2025-10-31 14:02:58,790 - PERF       WORKER:0:0      (ShotID 27) Selected time stepping scheme OT2
+2025-10-31 14:02:58,796 - PERF       WORKER:0:0      (ShotID 27) Running state equation for shot
+2025-10-31 14:02:58,797 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:04:23,497 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.70 s
+2025-10-31 14:04:23,518 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.58 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 14:04:23,518 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.70 s, 0.34 GPts/s][0m
+2025-10-31 14:04:23,518 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:04:23,518 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.89 s [OI=3.17, 13.80 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:04:23,518 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.34 s [OI=0.01, 11.56 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:04:23,518 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 14:04:23,518 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.13 GFlops/s][0m
+2025-10-31 14:04:23,518 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.48 GFlops/s, 19.87 GPts/s][0m
+2025-10-31 14:04:23,518 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:04:23,518 - PERF       WORKER:0:0      (ShotID 27) Completing state equation run for shot
+2025-10-31 14:04:23,519 - PERF       WORKER:0:0      (ShotID 27) Completed state equation run for shot
+2025-10-31 14:04:23,594 - PERF       WORKER:0:0      (ShotID 27) Preparing to run adjoint for shot
+2025-10-31 14:04:23,603 - PERF       WORKER:0:0      (ShotID 27) Running adjoint equation for shot
+2025-10-31 14:04:23,604 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:05:47,042 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.44 s
+2025-10-31 14:05:47,061 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.65 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 14:05:47,061 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.44 s, 0.35 GPts/s][0m
+2025-10-31 14:05:47,061 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:05:47,061 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.90 s [OI=3.17, 13.98 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:05:47,061 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.91 s [OI=0.01, 11.97 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:05:47,061 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.11 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 14:05:47,061 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.56 GFlops/s][0m
+2025-10-31 14:05:47,061 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:05:47,061 - PERF       WORKER:0:0      (ShotID 27) Completing adjoint equation run for shot
+2025-10-31 14:05:47,066 - PERF       WORKER:0:0      (ShotID 27) Completed adjoint equation run for shot
+2025-10-31 14:05:47,145 - PERF       WORKER:0:0      (ShotID 30) Preparing to run state for shot
+2025-10-31 14:05:47,147 - PERF       WORKER:0:0      (ShotID 30) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 14:05:47,147 - PERF       WORKER:0:0      (ShotID 30) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 14:05:47,147 - PERF       WORKER:0:0      (ShotID 30) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 14:05:47,147 - PERF       WORKER:0:0      (ShotID 30) Selected undersampling level 10
+2025-10-31 14:05:47,147 - PERF       WORKER:0:0      (ShotID 30) Selected time stepping scheme OT2
+2025-10-31 14:05:47,153 - PERF       WORKER:0:0      (ShotID 30) Running state equation for shot
+2025-10-31 14:05:47,154 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:07:11,946 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.80 s
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.57 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.79 s, 0.34 GPts/s][0m
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.96 s [OI=3.17, 13.78 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.36 s [OI=0.01, 11.54 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.31 GFlops/s, 19.83 GPts/s][0m
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      (ShotID 30) Completing state equation run for shot
+2025-10-31 14:07:11,968 - PERF       WORKER:0:0      (ShotID 30) Completed state equation run for shot
+2025-10-31 14:07:12,045 - PERF       WORKER:0:0      (ShotID 30) Preparing to run adjoint for shot
+2025-10-31 14:07:12,053 - PERF       WORKER:0:0      (ShotID 30) Running adjoint equation for shot
+2025-10-31 14:07:12,055 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:08:35,786 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.74 s
+2025-10-31 14:08:35,804 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.60 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 14:08:35,804 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.73 s, 0.35 GPts/s][0m
+2025-10-31 14:08:35,804 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:08:35,804 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.10 s [OI=3.17, 13.94 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:08:35,804 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.00 s [OI=0.01, 11.89 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:08:35,804 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.03 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 14:08:35,804 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.29 GFlops/s][0m
+2025-10-31 14:08:35,804 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:08:35,804 - PERF       WORKER:0:0      (ShotID 30) Completing adjoint equation run for shot
+2025-10-31 14:08:35,809 - PERF       WORKER:0:0      (ShotID 30) Completed adjoint equation run for shot
+2025-10-31 14:08:35,890 - PERF       WORKER:0:0      (ShotID 33) Preparing to run state for shot
+2025-10-31 14:08:35,891 - PERF       WORKER:0:0      (ShotID 33) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 14:08:35,892 - PERF       WORKER:0:0      (ShotID 33) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 14:08:35,892 - PERF       WORKER:0:0      (ShotID 33) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 14:08:35,892 - PERF       WORKER:0:0      (ShotID 33) Selected undersampling level 10
+2025-10-31 14:08:35,892 - PERF       WORKER:0:0      (ShotID 33) Selected time stepping scheme OT2
+2025-10-31 14:08:35,897 - PERF       WORKER:0:0      (ShotID 33) Running state equation for shot
+2025-10-31 14:08:35,899 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:10:00,961 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 85.07 s
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.52 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [85.06 s, 0.34 GPts/s][0m
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.20 s [OI=3.17, 13.73 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.39 s [OI=0.01, 11.52 GFlops/s, 0.24 GPts/s][0m
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.14 GFlops/s][0m
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.38 GFlops/s, 19.85 GPts/s][0m
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      (ShotID 33) Completing state equation run for shot
+2025-10-31 14:10:00,983 - PERF       WORKER:0:0      (ShotID 33) Completed state equation run for shot
+2025-10-31 14:10:01,061 - PERF       WORKER:0:0      (ShotID 33) Preparing to run adjoint for shot
+2025-10-31 14:10:01,069 - PERF       WORKER:0:0      (ShotID 33) Running adjoint equation for shot
+2025-10-31 14:10:01,070 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:11:24,757 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.69 s
+2025-10-31 14:11:24,775 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.61 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 14:11:24,775 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.69 s, 0.35 GPts/s][0m
+2025-10-31 14:11:24,775 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:11:24,775 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.12 s [OI=3.17, 13.94 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:11:24,775 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.94 s [OI=0.01, 11.94 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:11:24,775 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.08 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 14:11:24,775 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.39 GFlops/s][0m
+2025-10-31 14:11:24,775 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:11:24,775 - PERF       WORKER:0:0      (ShotID 33) Completing adjoint equation run for shot
+2025-10-31 14:11:24,780 - PERF       WORKER:0:0      (ShotID 33) Completed adjoint equation run for shot
+2025-10-31 14:11:24,854 - PERF       WORKER:0:0      (ShotID 38) Preparing to run state for shot
+2025-10-31 14:11:24,855 - PERF       WORKER:0:0      (ShotID 38) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 14:11:24,855 - PERF       WORKER:0:0      (ShotID 38) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 14:11:24,855 - PERF       WORKER:0:0      (ShotID 38) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 14:11:24,855 - PERF       WORKER:0:0      (ShotID 38) Selected undersampling level 10
+2025-10-31 14:11:24,855 - PERF       WORKER:0:0      (ShotID 38) Selected time stepping scheme OT2
+2025-10-31 14:11:24,861 - PERF       WORKER:0:0      (ShotID 38) Running state equation for shot
+2025-10-31 14:11:24,863 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:12:50,140 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 85.28 s
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.49 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [85.28 s, 0.34 GPts/s][0m
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.36 s [OI=3.17, 13.70 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.45 s [OI=0.01, 11.46 GFlops/s, 0.24 GPts/s][0m
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.11 GFlops/s][0m
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.67 GFlops/s, 19.92 GPts/s][0m
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      (ShotID 38) Completing state equation run for shot
+2025-10-31 14:12:50,161 - PERF       WORKER:0:0      (ShotID 38) Completed state equation run for shot
+2025-10-31 14:12:50,238 - PERF       WORKER:0:0      (ShotID 38) Preparing to run adjoint for shot
+2025-10-31 14:12:50,246 - PERF       WORKER:0:0      (ShotID 38) Running adjoint equation for shot
+2025-10-31 14:12:50,248 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:14:13,909 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.67 s
+2025-10-31 14:14:13,927 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.61 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 14:14:13,927 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.66 s, 0.35 GPts/s][0m
+2025-10-31 14:14:13,927 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:14:13,927 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.03 s [OI=3.17, 13.95 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:14:13,927 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.00 s [OI=0.01, 11.88 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:14:13,927 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.02 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 14:14:13,927 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.41 GFlops/s][0m
+2025-10-31 14:14:13,927 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:14:13,927 - PERF       WORKER:0:0      (ShotID 38) Completing adjoint equation run for shot
+2025-10-31 14:14:13,932 - PERF       WORKER:0:0      (ShotID 38) Completed adjoint equation run for shot
+2025-10-31 14:14:14,016 - PERF       WORKER:0:0      (ShotID 41) Preparing to run state for shot
+2025-10-31 14:14:14,018 - PERF       WORKER:0:0      (ShotID 41) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 14:14:14,018 - PERF       WORKER:0:0      (ShotID 41) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 14:14:14,018 - PERF       WORKER:0:0      (ShotID 41) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 14:14:14,018 - PERF       WORKER:0:0      (ShotID 41) Selected undersampling level 10
+2025-10-31 14:14:14,018 - PERF       WORKER:0:0      (ShotID 41) Selected time stepping scheme OT2
+2025-10-31 14:14:14,025 - PERF       WORKER:0:0      (ShotID 41) Running state equation for shot
+2025-10-31 14:14:14,027 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:15:39,206 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 85.18 s
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.50 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [85.18 s, 0.34 GPts/s][0m
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.27 s [OI=3.17, 13.72 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.43 s [OI=0.01, 11.48 GFlops/s, 0.24 GPts/s][0m
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.12 GFlops/s][0m
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.46 s [OI=0.50, 79.12 GFlops/s, 19.78 GPts/s][0m
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      (ShotID 41) Completing state equation run for shot
+2025-10-31 14:15:39,227 - PERF       WORKER:0:0      (ShotID 41) Completed state equation run for shot
+2025-10-31 14:15:39,304 - PERF       WORKER:0:0      (ShotID 41) Preparing to run adjoint for shot
+2025-10-31 14:15:39,312 - PERF       WORKER:0:0      (ShotID 41) Running adjoint equation for shot
+2025-10-31 14:15:39,314 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:17:02,595 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.29 s
+2025-10-31 14:17:02,612 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.68 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 14:17:02,612 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.28 s, 0.35 GPts/s][0m
+2025-10-31 14:17:02,612 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:17:02,612 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.76 s [OI=3.17, 14.01 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:17:02,613 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.89 s [OI=0.01, 11.99 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:17:02,613 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.14 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 14:17:02,613 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.49 GFlops/s][0m
+2025-10-31 14:17:02,613 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:17:02,613 - PERF       WORKER:0:0      (ShotID 41) Completing adjoint equation run for shot
+2025-10-31 14:17:02,618 - PERF       WORKER:0:0      (ShotID 41) Completed adjoint equation run for shot
+2025-10-31 14:17:02,694 - PERF       WORKER:0:0      (ShotID 43) Preparing to run state for shot
+2025-10-31 14:17:02,697 - PERF       WORKER:0:0      (ShotID 43) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 14:17:02,697 - PERF       WORKER:0:0      (ShotID 43) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 14:17:02,697 - PERF       WORKER:0:0      (ShotID 43) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 14:17:02,697 - PERF       WORKER:0:0      (ShotID 43) Selected undersampling level 10
+2025-10-31 14:17:02,697 - PERF       WORKER:0:0      (ShotID 43) Selected time stepping scheme OT2
+2025-10-31 14:17:02,703 - PERF       WORKER:0:0      (ShotID 43) Running state equation for shot
+2025-10-31 14:17:02,705 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:18:27,737 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 85.04 s
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.53 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [85.03 s, 0.34 GPts/s][0m
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.16 s [OI=3.17, 13.74 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.39 s [OI=0.01, 11.52 GFlops/s, 0.24 GPts/s][0m
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.13 GFlops/s][0m
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.46 s [OI=0.50, 78.80 GFlops/s, 19.70 GPts/s][0m
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      (ShotID 43) Completing state equation run for shot
+2025-10-31 14:18:27,758 - PERF       WORKER:0:0      (ShotID 43) Completed state equation run for shot
+2025-10-31 14:18:27,835 - PERF       WORKER:0:0      (ShotID 43) Preparing to run adjoint for shot
+2025-10-31 14:18:27,843 - PERF       WORKER:0:0      (ShotID 43) Running adjoint equation for shot
+2025-10-31 14:18:27,844 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:19:51,582 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.74 s
+2025-10-31 14:19:51,600 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.60 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 14:19:51,600 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.74 s, 0.35 GPts/s][0m
+2025-10-31 14:19:51,600 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:19:51,600 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 70.11 s [OI=3.17, 13.94 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:19:51,600 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.00 s [OI=0.01, 11.88 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:19:51,600 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.03 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 14:19:51,600 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.40 GFlops/s][0m
+2025-10-31 14:19:51,600 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:19:51,600 - PERF       WORKER:0:0      (ShotID 43) Completing adjoint equation run for shot
+2025-10-31 14:19:51,605 - PERF       WORKER:0:0      (ShotID 43) Completed adjoint equation run for shot
+2025-10-31 14:19:51,728 - PERF       WORKER:0:0      (ShotID 45) Preparing to run state for shot
+2025-10-31 14:19:51,729 - PERF       WORKER:0:0      (ShotID 45) Estimated bandwidth for the propagated wavelet 0.000-0.427 MHz
+2025-10-31 14:19:51,729 - PERF       WORKER:0:0      (ShotID 45) Spatial grid spacing (0.257 mm | 13.971 PPW) is below dispersion limit (0.717 mm | 5.000 PPW)
+2025-10-31 14:19:51,729 - PERF       WORKER:0:0      (ShotID 45) Time grid spacing (0.046 μs | 43%) is below OT2 limit (0.047 μs)
+2025-10-31 14:19:51,729 - PERF       WORKER:0:0      (ShotID 45) Selected undersampling level 10
+2025-10-31 14:19:51,729 - PERF       WORKER:0:0      (ShotID 45) Selected time stepping scheme OT2
+2025-10-31 14:19:51,735 - PERF       WORKER:0:0      (ShotID 45) Running state equation for shot
+2025-10-31 14:19:51,736 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:21:16,640 - PERF       WORKER:0:0      Operator `acoustic_iso_state_save` ran in 84.91 s
+2025-10-31 14:21:16,662 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.55 GFlops/s, 0.34 GPts/s][0m
+2025-10-31 14:21:16,662 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [84.90 s, 0.34 GPts/s][0m
+2025-10-31 14:21:16,662 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:21:16,662 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 71.05 s [OI=3.17, 13.76 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:21:16,662 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 12.38 s [OI=0.01, 11.53 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:21:16,662 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.01 s[0m
+2025-10-31 14:21:16,662 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 0.04 s [OI=1.84, 1.13 GFlops/s][0m
+2025-10-31 14:21:16,662 - PERF       WORKER:0:0      [1;37;32m  * section4 ran in 1.45 s [OI=0.50, 79.48 GFlops/s, 19.87 GPts/s][0m
+2025-10-31 14:21:16,662 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:21:16,662 - PERF       WORKER:0:0      (ShotID 45) Completing state equation run for shot
+2025-10-31 14:21:16,663 - PERF       WORKER:0:0      (ShotID 45) Completed state equation run for shot
+2025-10-31 14:21:16,739 - PERF       WORKER:0:0      (ShotID 45) Preparing to run adjoint for shot
+2025-10-31 14:21:16,747 - PERF       WORKER:0:0      (ShotID 45) Running adjoint equation for shot
+2025-10-31 14:21:16,749 - WARNING    WORKER:0:0      [1;37;34mAutoTuner: could not perform any runs[0m
+2025-10-31 14:22:40,153 - PERF       WORKER:0:0      Operator `acoustic_iso_adjoint` ran in 83.41 s
+2025-10-31 14:22:40,170 - PERF       WORKER:0:0      [1;37;32mGlobal performance: [OI=0.01, 14.66 GFlops/s, 0.35 GPts/s][0m
+2025-10-31 14:22:40,170 - PERF       WORKER:0:0      [1;37;32mGlobal performance <w/o setup>: [83.41 s, 0.35 GPts/s][0m
+2025-10-31 14:22:40,170 - PERF       WORKER:0:0      [1;37;32mLocal performance:[0m
+2025-10-31 14:22:40,171 - PERF       WORKER:0:0      [1;37;32m  * section0 ran in 69.79 s [OI=3.17, 14.00 GFlops/s, 0.37 GPts/s][0m
+2025-10-31 14:22:40,171 - PERF       WORKER:0:0      [1;37;32m  * section1 ran in 11.99 s [OI=0.01, 11.89 GFlops/s, 0.25 GPts/s][0m
+2025-10-31 14:22:40,171 - PERF       WORKER:0:0      [1;37;32m  * section2 ran in 0.04 s [OI=6.00, 5.04 GFlops/s, 0.09 GPts/s][0m
+2025-10-31 14:22:40,171 - PERF       WORKER:0:0      [1;37;32m  * section3 ran in 1.60 s [OI=0.25, 64.33 GFlops/s][0m
+2025-10-31 14:22:40,171 - PERF       WORKER:0:0      [1;37;32mPerformance[mode=advanced] arguments: {'nthreads': 24, 'nthreads_nonaffine': 24, 'pthreads': 0}[0m
+2025-10-31 14:22:40,171 - PERF       WORKER:0:0      (ShotID 45) Completing adjoint equation run for shot
+2025-10-31 14:22:40,176 - PERF       WORKER:0:0      (ShotID 45) Completed adjoint equation run for shot

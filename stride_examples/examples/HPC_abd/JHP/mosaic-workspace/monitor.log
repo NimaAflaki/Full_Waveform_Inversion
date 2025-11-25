@@ -1,0 +1,2 @@
+2025-10-03 14:19:27,697 - INFO       MONITOR         Listening at <CommsManager object at 140038828146128, uid=monitor, address=ultrasound.uom.memphis.edu, port=3000, state=connected>
+2025-10-03 14:19:28,832 - INFO       MONITOR         Listening at <NODE:0 | WORKER:0-1>
