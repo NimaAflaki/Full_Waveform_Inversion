@@ -1,3 +1,4 @@
 # ensure Docker-related files always keep LF endings, even on Windows
 docker/Dockerfile* text eol=lf
 docker/*.sh text eol=lf
+*.h5 filter=lfs diff=lfs merge=lfs -text
